@@ -29,5 +29,11 @@ class Customer extends Model
 
     }
 
+    public function assets()
+    {
+        return $this->hasMany('App\Asset');
+
+    }
+
 
 }

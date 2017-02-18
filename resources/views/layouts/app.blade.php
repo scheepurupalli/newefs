@@ -39,7 +39,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand">
+                <a class="navbar-brand" href="{{ url('/') }}">
                     Laravel
                 </a>
             </div>

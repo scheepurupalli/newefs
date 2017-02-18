@@ -19,12 +19,13 @@ class CreateStocksTable extends Migration
             $table->integer('shares');
             $table->float('purchase_price');
             $table->date('purchased');
+            $table->float('current_price');
             $table->integer('customer_id')->unsigned();
             $table->timestamps();
         });
 
         Schema::table('stocks', function (Blueprint $table) {
-           $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade');
+            $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade');
         });
     }
 
@@ -38,3 +39,4 @@ class CreateStocksTable extends Migration
         Schema::drop('stocks');
     }
 }
+r
