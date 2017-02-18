@@ -39,4 +39,4 @@ class CreateStocksTable extends Migration
         Schema::drop('stocks');
     }
 }
-r
+
